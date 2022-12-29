@@ -4,6 +4,11 @@
 
   Simple word guessing game with a scoreboard.  Scores are tracked using local storage.
   
+  Screenshot:
+  
+  ![wordguess](https://user-images.githubusercontent.com/113722447/209977598-cf96e0cd-58a1-4368-b26e-57514fd50ed8.png)
+
+  
   ## Table of Contents
   
   - [Installation](#installation)
