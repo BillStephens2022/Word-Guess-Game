@@ -6,6 +6,7 @@ var winsEl = document.getElementById("wins");
 var lossesEl = document.getElementById("losses");
 var resetScoresButton = document.getElementById("reset-scores");
 var timeLeftEl = document.getElementById("time-left");
+var gameHeaderEl = document.getElementById("game-header");
 var timeLeft = 30;
 var selectedWord = "";
 var wins = 0;
@@ -83,9 +84,10 @@ function startTimer() {
 function renderBlanks() {
     selectedWord = words[Math.floor(Math.random() * words.length)];
     for (var i=0; i < selectedWord.length; i++) {
-        blanksArray.push("_ ");
+        blanksArray.push("_  ");
     };
     blanksString = blanksArray.join('');
+    gameHeaderEl.textContent = "Guess a letter:";
     wordEl.textContent = blanksString;
     console.log(selectedWord);
 }
@@ -111,7 +113,7 @@ function checkWord() {
 function initiateWinSequence() {
     wins++;
     messageEl.textContent = "YOU WIN!!";
-    messageEl.style.color = "green";
+    messageEl.style.color = "#2BFF88";
     setWins();
     init();
 }
