@@ -134,7 +134,7 @@ function resetScores() {
 }
 
 document.addEventListener("keypress", function(event) {
-    var keyPress = event.key;
+    var keyPress = event.key.toLowerCase();
     checkLetter(keyPress);
     checkWord();
 }); 
