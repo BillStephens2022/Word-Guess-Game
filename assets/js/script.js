@@ -26,6 +26,8 @@ function startGame() {
     winGame = false;
     startButton.disabled = true;
     messageEl.textContent = "";
+    messageEl.focus();
+
     init();
     renderBlanks();
     startTimer();
